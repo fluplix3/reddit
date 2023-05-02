@@ -1,0 +1,104 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  min-width: 200px;
+  min-height: 160px;
+  max-width: 80%;
+  padding: 24px;
+  margin-bottom: 25px;
+}
+
+.content {
+  overflow-y: auto;
+}
+
+.close {
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  margin: -24px;
+  color: #000
+}
+
+.comment{
+  display: flex;
+}
+
+.commentLeft {
+  margin-right: 22px;
+}
+
+.arrows {
+  display: flex;
+  flex-direction: column;
+}
+
+svg.down {
+  transform: rotate(180deg);
+  margin-top: 10px;
+}
+
+.line {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  margin: 0 7px 0 0;
+}
+
+.userLink {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.username {
+  color: #CC6633;
+  font-size: 14px;
+}
+
+.hoursAgo {
+  color: rgba(153, 153, 153, 1);
+  margin-left: 5px;
+}
+
+.textContent {
+  margin-top: 11px;
+  line-height: 24px;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 11px;
+}
+
+.btnComments {
+  display: flex;
+}
+
+.btnComments:not(:first-child) {
+  margin-left: 27px;
+}
+
+@media all and (min-width: 1540px) {
+   button.up:hover > svg > path {
+    fill: var(--green);
+  }
+
+   button.down:hover > svg > path {
+    fill: var(--orange);
+  }
+}
